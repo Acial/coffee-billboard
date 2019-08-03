@@ -47,9 +47,16 @@ export const loadCoffee = () => {
 };
 
 export const addCoffee = coffee => {
-  return dispatch =>
+  return dispatch => {
     dispatch({
-      type: actionTypes.ADD_COFFEE,
-      data: coffee
-    });
+        type: actionTypes.ADD_COFFEE,
+      });
+  
+      setTimeout(() => {
+          dispatch({
+            type: actionTypes.ADD_COFFEE_SUCCESS,
+            data: coffee
+          })
+      }, 1000)
+  }
 };
