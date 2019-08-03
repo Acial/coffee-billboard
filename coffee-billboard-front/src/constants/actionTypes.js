@@ -1,2 +1,5 @@
 export const LOAD_COFFEES = 'LOAD_COFFEES';
+export const LOAD_COFFEES_SUCCESS = 'LOAD_COFFEES_SUCCESS';
+export const LOAD_COFFEES_FAIL = 'LOAD_COFFEES_FAIL';
+
 export const ADD_COFFEE = 'ADD_COFFEE';
