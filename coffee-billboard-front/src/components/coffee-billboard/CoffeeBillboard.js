@@ -6,7 +6,7 @@ const CoffeeBillboard = ({coffees}) => {
     const content = <div className='coffee-billboard'>
         {
             coffees && coffees.map((coffee, index) => {
-                return <CoffeeCard index={index} title={coffee.title} imageUrl={coffee.imageUrl} price={coffee.price} />   
+                return <CoffeeCard key={index} index={index} title={coffee.title} imageUrl={coffee.imageUrl} price={coffee.price} />   
             })
         }
     </div>

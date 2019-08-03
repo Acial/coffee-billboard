@@ -1,35 +1,17 @@
 import React from 'react';
 import CoffeeBillboard from './CoffeeBillboard';
+import { useDispatch, useSelector } from 'react-redux';
+import { loadCoffee } from '../../actions/coffee';
+import { useState, useEffect } from 'react';
 
 const CoffeeBillboardContainer = (props) => {
-    const coffees = [
-        {
-            title: 'coffee 1',
-            imageUrl:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG',
-            price: 30
-        },
-        {
-            title: 'coffee 1',
-            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG',
-            price: 30
-        },
-        {
-            title: 'coffee 1',
-            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG',
-            price: 30
-        },
-        {
-            title: 'coffee 1',
-            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG',
-            price: 30
-        },
-        {
-            title: 'coffee 1',
-            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG',
-            price: 30
-        }
-    ]
+    const coffees = useSelector((state) => state.coffees);
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(loadCoffee)
+    }, [])
+    
     const content = <div>
         <CoffeeBillboard coffees={coffees}/>
     </div>
