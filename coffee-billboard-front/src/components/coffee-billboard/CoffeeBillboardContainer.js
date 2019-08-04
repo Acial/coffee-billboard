@@ -15,7 +15,7 @@ const CoffeeBillboardContainer = () => {
   }, []);
 
   const content = loading ? (
-    <h1>SPINNER</h1>
+    <h1>Loading...</h1>
   ) : (
       <React.Fragment>
         <AddCoffee />
