@@ -24,5 +24,11 @@ namespace CoffeeBillboard.API.Controllers
         {
             return await _coffeeRepository.GetCoffees();
         }
+
+        [HttpPost]
+        public async Task<ActionResult<Coffee>> Post([FromBody] Coffee coffee)
+        {
+            return await _coffeeRepository.Insert(coffee);
+        }
     }
 }
