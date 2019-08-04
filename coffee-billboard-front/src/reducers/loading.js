@@ -14,6 +14,12 @@ export const loadingReducer = (state = false, { type }) => {
       return false;
     case actionTypes.ADD_COFFEE_SUCCESS:
       return false;
+    case actionTypes.REMOVE_COFFEE:
+      return true;
+    case actionTypes.REMOVE_COFFEE_FAIL:
+      return false;
+    case actionTypes.REMOVE_COFFEE_SUCCESS:
+      return false;
     default:
       return state;
   }

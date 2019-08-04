@@ -1,6 +1,5 @@
 import React from "react";
 import CoffeeBillboardContainer from "./components/coffee-billboard/CoffeeBillboardContainer";
-import AddCoffee from "./components/add-coffee/AddCoffee";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";

@@ -11,6 +11,7 @@ const CoffeeBillboard = ({ coffees }) => {
             <CoffeeCard
               key={index}
               index={index}
+              id = {coffee.id}
               title={coffee.title}
               imageUrl={coffee.imageUrl}
               price={coffee.price}
