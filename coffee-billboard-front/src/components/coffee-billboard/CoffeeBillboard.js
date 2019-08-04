@@ -1,10 +1,14 @@
-import React from "react";
-import CoffeeCard from "./CoffeeCard";
-import "./CoffeeBillboard.scss";
+import React from 'react';
+
+
+import CoffeeCard from './CoffeeCard';
+import './CoffeeBillboard.scss';
 
 const CoffeeBillboard = ({ coffees }) => {
   const content = (
-    <div className="coffee-billboard">
+    <div>
+          <div className='container'>
+            <div className='row'>
       {coffees &&
         coffees.map((coffee, index) => {
           return (
@@ -18,7 +22,7 @@ const CoffeeBillboard = ({ coffees }) => {
             />
           );
         })}
-    </div>
+    </div></div></div>
   );
 
   return content;

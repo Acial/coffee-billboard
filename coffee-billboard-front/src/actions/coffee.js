@@ -1,5 +1,5 @@
-import * as actionTypes from "../constants/actionTypes";
-import axios from "axios";
+import * as actionTypes from '../constants/actionTypes';
+import axios from 'axios';
 
 export const loadCoffee = () => {
   return dispatch => {
@@ -7,7 +7,7 @@ export const loadCoffee = () => {
       type: actionTypes.LOAD_COFFEES
     });
 
-    axios.get("http://localhost:54155/api/coffee").then(
+    axios.get('http://localhost:54155/api/coffee').then(
       response => {
         dispatch({
           type: actionTypes.LOAD_COFFEES_SUCCESS,
@@ -29,7 +29,7 @@ export const addCoffee = coffee => {
       type: actionTypes.ADD_COFFEE
     });
 
-    axios.post("http://localhost:54155/api/coffee", coffee).then(
+    axios.post('http://localhost:54155/api/coffee', coffee).then(
       response => {
         dispatch({
           type: actionTypes.ADD_COFFEE_SUCCESS,

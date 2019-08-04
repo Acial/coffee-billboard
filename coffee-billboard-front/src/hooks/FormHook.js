@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const useForm = (fields, submitCallback) => {
   const [inputs, setInputs] = useState({
