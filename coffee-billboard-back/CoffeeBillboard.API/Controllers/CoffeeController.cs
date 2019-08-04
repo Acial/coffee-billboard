@@ -30,5 +30,11 @@ namespace CoffeeBillboard.API.Controllers
         {
             return await _coffeeRepository.Insert(coffee);
         }
+
+        [HttpDelete("{id}")]
+        public async Task Delete(int id)
+        {
+            await _coffeeRepository.Delete(id);
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace CoffeeBillboard.DataAccess
     {
         Task<List<Coffee>> GetCoffees();
         Task<Coffee> Insert(Coffee coffee);
+        Task Delete(int id);
     }
 }
