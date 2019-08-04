@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import useForm from '../../hooks/FormHook';
 import { useDispatch } from 'react-redux';
 import { addCoffee } from '../../actions/coffee';

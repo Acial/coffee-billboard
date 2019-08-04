@@ -12,7 +12,7 @@ const CoffeeBillboardContainer = () => {
 
   useEffect(() => {
     dispatch(loadCoffee());
-  }, []);
+  }, [dispatch]);
 
   const content = loading ? (
     <h1>Loading...</h1>

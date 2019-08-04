@@ -15,7 +15,7 @@ const CoffeeCard = ({ id, title, imageUrl, price }) => {
     <div className='col-lg-3 col-md-3'>
       <div className='coffee-card'>
         <div className='imgage-container'>
-          <img src={imageUrl} width='800' height='800' />
+          <img src={imageUrl} width='800' height='800' alt=''/>
         </div>
         <div className='clear-line' />
         <h4>{title}</h4>

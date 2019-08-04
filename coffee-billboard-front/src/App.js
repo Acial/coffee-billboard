@@ -2,7 +2,7 @@ import React from 'react';
 import CoffeeBillboardContainer from './components/coffee-billboard/CoffeeBillboardContainer';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
 
 const FakeRoute = () => <h1>Fake route</h1>  
