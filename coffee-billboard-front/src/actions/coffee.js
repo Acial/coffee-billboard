@@ -7,7 +7,7 @@ export const loadCoffee = () => {
       type: actionTypes.LOAD_COFFEES
     });
 
-    axios.get('http://localhost:54155/api/coffee').then(
+    axios.get('http://localhost:5050/api/coffee').then(
       response => {
         dispatch({
           type: actionTypes.LOAD_COFFEES_SUCCESS,
@@ -29,7 +29,7 @@ export const addCoffee = coffee => {
       type: actionTypes.ADD_COFFEE
     });
 
-    axios.post('http://localhost:54155/api/coffee', coffee).then(
+    axios.post('http://localhost:5050/api/coffee', coffee).then(
       response => {
         dispatch({
           type: actionTypes.ADD_COFFEE_SUCCESS,
@@ -51,7 +51,7 @@ export const removeCoffee = id => {
       type: actionTypes.REMOVE_COFFEE
     });
 
-    axios.delete(`http://localhost:54155/api/coffee/${id}`).then(
+    axios.delete(`http://localhost:5050/api/coffee/${id}`).then(
       () => {
         dispatch({
           type: actionTypes.REMOVE_COFFEE_SUCCESS,
