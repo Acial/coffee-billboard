@@ -13,7 +13,7 @@ $ cd ..\CoffeeBillboard.API\
 $ dotnet run
 ```
 ### Running front end project
-Following commands will install required dependencies and start the project
+Following commands will install required dependencies and start the project:
 ```sh
 $ cd coffee-billboard-front\
 $ npm install
