@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadCoffee } from "../../actions/coffee";
 import { useEffect } from "react";
 
-const CoffeeBillboardContainer = props => {
+const CoffeeBillboardContainer = () => {
   const coffees = useSelector(state => state.coffees);
   const loading = useSelector(state => state.loading);
   const dispatch = useDispatch();
@@ -21,7 +21,6 @@ const CoffeeBillboardContainer = props => {
         <AddCoffee />
         <CoffeeBillboard coffees={coffees} />
       </React.Fragment>
-    
   );
 
   return content;
