@@ -27,7 +27,7 @@ namespace CoffeeBillboard.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ICoffeeRepository, CoffeeRepository>();
-            services.AddDbContext<CoffeeContext>(options => options.UseSqlite("Data Source=coffees.db"));
+            services.AddDbContext<CoffeeContext>(options => options.UseSqlite("Data Source=../coffees.db"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

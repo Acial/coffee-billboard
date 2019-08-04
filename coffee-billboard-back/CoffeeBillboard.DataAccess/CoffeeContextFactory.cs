@@ -11,7 +11,7 @@ namespace CoffeeBillboard.DataAccess
         public CoffeeContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CoffeeContext>();
-            optionsBuilder.UseSqlite("Data Source=coffees.db");
+            optionsBuilder.UseSqlite("Data Source=../coffees.db");
 
             return new CoffeeContext(optionsBuilder.Options);
         }
